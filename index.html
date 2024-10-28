@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///C:/Users/kayat/OneDrive/Masa%C3%BCst%C3%BC/webTasar%C4%B1m/index.html -->
+<html lang="tr">
+   <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+
+</head>
+<style>
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+        color:black;
+        background-color:rgb(243, 238, 238);
+        font-family: "Times New Roman", Times, serif;
+      }
+      button{
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       border-radius: 25px; /* Kenar yuvarlaklığı */
+       box-shadow: 2px 2px 5px grey; /* Gri gölge */
+       font-size: 16px;
+       cursor: pointer;
+       background-color: rgb(183, 2, 2);
+      }
+      button:hover{
+        background-color: rgb(102, 2, 2);
+        font-size: 17px;
+      }
+
+   /* CSS ile butonların resimlerin üstünde görünmesini sağlayalım */
+   .image-container {
+       position: relative;
+       display: inline-block;
+       margin: 10px; /* Resimler arasına boşluk bırakmak için */
+   }
+
+   .image-container img {
+       display: block;
+       width: 300px;
+       height: 450px;
+       border-radius: 25px;
+       box-shadow: 2px 2px 5px grey;
+   }
+   .image-container:hover{
+    transform: translate(0px, -20px);
+   }
+
+   .image-container .overlay {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+      
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       opacity: 0; /* Başlangıçta görünmez yapalım */
+       transition: opacity 0.3s ease; /* Daha güzel bir geçiş efekti */
+   }
+
+   .image-container:hover .overlay {
+       opacity: 1; /* Fare resmin üzerine geldiğinde butonları göster */
+   }
+
+   .image-container .overlay a {
+       color: white;
+       text-decoration: none;
+       padding: 10px 20px;
+       background: #fff5f5;
+       border-radius: 5px;
+       margin: 5px; /* Butonlar arasına boşluk bırakmak için */
+   }
+   .features-list {
+    padding: 0;
+    margin: 50px 0; /* Listenin etrafında biraz boşluk bırakır */
+    list-style: none; /* Madde işaretlerini kaldırır */
+}
+
+.features-list li {
+    margin-bottom: 10px; /* Her liste öğesi arasında biraz boşluk bırakır */
+}
+
+hr{
+    
+    box-shadow: 2px 2px 5px rgb(255, 254, 254);
+    width: 100%;
+    
+}
+.baslık{
+    color: rgb(183, 2, 2);
+}
+b{
+    font-size: 20px;
+    color:rgb(183, 2, 2);
+    margin-bottom: 50px;
+}
+
+
+</style>
+
+<body>
+   <title>Kaya Akademi</title>
+   <h1>Kaya Akademi</h1>
+   <hr>
+
+   <center>
+    <a href="index.html"><button type="button">Anasayfa</button></a>     
+    <a href="kurslar.html"><button type="button">Kurslar</button></a>          
+    <a href="kurumsal.html"><button type="button">Kurumsal</button></a>     
+    <a href="iletişim.html"><button type="button">Sık Sorulan Sorular</button></a>    
+    <a href="kayit.html"><button type="button">Kayıt Ol</button></a>
+   </center>
+   <center>
+      <!-- Her resmi bir konteyner içine alalım -->
+  <div class="image-container">
+   <p>KEMAN KURSU</p>
+      <a href="kemankurs.html" class="overlay"><button type="button">Kayıt Ol</button></a>
+      <img src="kemanresim.jpg" alt="resim">
+  </div>
+
+  <div class="image-container">
+   <p>PİYANO KURSU</p>
+      <a href="piyanokurs.html" class="overlay"><button type="button">Kayıt Ol</button></a>
+      <img src="piyanoresim.jpg" alt="resim">
+  </div>
+
+  <div class="image-container">
+   <p>GİTAR KURSU</p>
+      <a href="gitarkurs.html" class="overlay"><button type="button">Kayıt Ol</button></a>
+      <img src="gitarresim.jpg" alt="resim">
+  </div>
+
+  <div class="image-container">
+   <p>UKULELE KURSU</p>
+      <a href="ukulelekurs.html" class="overlay"><button type="button">Kayıt Ol</button></a>
+      <img src="ukuleleresim.jpg" alt="resim">
+  </div>
+</center>
+<center><hr>
+<h2 class="baslık">İçindeki Müzisyeni Keşfet!</h2>
+<h3 class="baslık">Müziğin Büyülü Dünyasına Adım At! Hayatın Coşkusunu Müzikle Yakala!</h3>
+<p>Uluslararası standartlarda uygulamalı eğitimler, 
+   fark yaratan stüdyo ve sahne çalışmalarıyla heyecan verici bir müzik yolculuğuna çıkmak için Türkiye'nin en iyi müzik okulu Kaya Akademi ile tanışın!
+</p>
+<hr>
+</center>
+<ul class="features-list">
+   <li><b>Uzman Öğretmenler</b><br> Kaya Akademi, alanında uzmanlaşmış ve deneyimli öğretmenler tarafından yönetilir. Öğrencilere en iyi eğitimi sunmak için seçkin bir öğretim kadrosuna sahiptir.</li>
+   <hr>
+   <li><b>Geniş Kurs Yelpazesi</b><br>Kaya Akademi, gitar, piyano, ukulele ve keman gibi çeşitli enstrümanlarda dersler sunar. Her enstrüman için başlangıçtan ileri seviyeye kadar farklı seviyelerde kurslar bulunmaktadır.</li>
+   <hr>
+   <li><b>Bireysel İlgi</b><br>Her öğrencinin bireysel ihtiyaçlarına odaklanarak, öğrencilere kişiselleştirilmiş bir öğrenme deneyimi sunulur. Küçük sınıf boyutları ve bireysel ders seçenekleri, öğrencilerin potansiyellerini en üst düzeye çıkarmalarına olanak tanır.</li>
+   <hr>
+   <li><b>Pratik Odaklı Eğitim</b><br>Kaya Akademi, öğrencilerin müzikal yeteneklerini geliştirmelerine odaklanarak, uygulamalı eğitim yöntemlerini benimser. Teorik bilginin yanı sıra öğrencilere pratik müzikal beceriler kazandırılır.</li>
+   <hr>
+   <li><b>Stüdyo ve Sahne Deneyimi</b><br>Öğrencilere stüdyo kayıt ve sahne performansı gibi gerçek dünya deneyimleri sunulur. Bu deneyimler, öğrencilerin sahne korkusunu yenmelerine ve profesyonel bir müzik kariyerine hazırlanmalarına yardımcı olur.</li>
+   <hr>
+   <li><b>Müzikal Yaratıcılığı Teşvik Eden Ortam</b><br>Kaya Akademi, öğrencilerin müzikal yaratıcılıklarını keşfetmeleri ve geliştirmeleri için teşvik edici bir ortam sunar. Öğrenciler, kendi bestelerini yapma ve müzikal ifadelerini özgürce ifade etme fırsatına sahiptir.</li>
+   <hr>
+   <li><b>Topluluk ve İşbirliği</b><br>Kaya Akademi, öğrenciler arasında bir topluluk oluşturmayı ve işbirliğini teşvik eder. Grup dersleri, öğrencilerin birbirleriyle etkileşime geçmelerine ve birlikte müzik yapmalarına olanak tanır.</li>
+   <hr>  
+   <li><b>Modern Eğitim Teknolojisi</b><br>Kaya Akademi, modern eğitim teknolojilerini kullanarak öğrenme deneyimini geliştirir. İnteraktif ders materyalleri, çevrimiçi kaynaklar ve dijital araçlar, öğrencilerin daha etkili bir şekilde öğrenmelerini sağlar.</li>
+   <hr>
+   <li><b>Sürekli Gelişim ve Geribildirim</b><br>Öğrencilerin ilerlemesini izlemek ve gelişimlerini desteklemek için düzenli geribildirim ve performans değerlendirmeleri sağlanır. Bu şekilde, öğrencilerin hedeflerine ulaşmaları için sürekli bir rehberlik sağlanır.</li>
+</ul>
+
+
+
+   
+</body></html>

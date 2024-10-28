@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <title>Kayıt Onay Sayfası</title>
+    <style>
+        body {
+            margin-left: 100px;
+            margin-right: 100px;
+            color: black;
+            background-color: rgb(243, 238, 238);
+            font-family: "Times New Roman", Times, serif;
+            
+        }
+        button {
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 2px 2px 5px grey;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: rgb(183, 2, 2);
+        }
+        button:hover {
+            background-color: rgb(102, 2, 2);
+            font-size: 17px;
+        }
+        .kayit-bilgileri {
+            border: 3px solid #890d0d;
+            background-color:#f4c5c546;
+            margin-top: 50px;
+            margin-left: 400px;
+            margin-right: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px grey;
+        }
+        p {
+            margin-top: 10px;
+        }
+        .kayit{
+            border: 3px solid #890d0d;
+            background-color:#f4c5c546;
+            margin-top: 50px;
+            margin-left: 400px;
+            margin-right: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px grey;
+
+        }
+    </style>
+</head>
+<body>   
+    <h1>Kaya Akademi</h1>
+    <hr>
+       <center>
+        <a href="index.html"><button type="button">Anasayfa</button></a>     
+        <a href="kurslar.html"><button type="button">Kurslar</button></a>          
+        <a href="kurumsal.html"><button type="button">Kurumsal</button></a>     
+        <a href="iletişim.html"><button type="button">Sık Sorulan Sorular</button></a>      
+        <a href="kayit.html"><button type="button">Kayıt Ol</button></a>
+    </center>
+    <h1>Kayıt Bilgileri</h1>
+  
+    
+    <div class="kayit">
+        <p>Kaya Akademi'yi tercih ettiğiniz için teşekkürler. Yakın zamanda sizinle iletişime geçeceğiz.☺☺☺</p>
+    </div>
+
+<div class="kayit-bilgileri" id="kayitBilgileri"></div>
+    <script>
+        // URL'den verileri al
+        var urlParams = new URLSearchParams(window.location.search);
+        var ad = urlParams.get('firstname');
+        var soyad = urlParams.get('lastname');
+        var email = urlParams.get('email');
+        var kurs = urlParams.get('course');
+
+        // HTML içine yerleştir
+        var kayitBilgileriDiv = document.getElementById("kayitBilgileri");
+        kayitBilgileriDiv.innerHTML = "<h2>Kayıt Bilgileriniz</h2>" +
+            "<p><strong>Ad:</strong> " + ad + "</p>" +
+            "<p><strong>Soyad:</strong> " + soyad + "</p>" +
+            "<p><strong>E-Posta:</strong> " + email + "</p>" +
+            "<p><strong>Kurs:</strong> " + kurs + "</p>";
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///C:/Users/kayat/OneDrive/Masa%C3%BCst%C3%BC/webTasar%C4%B1m/index.html -->
+<html lang="tr">
+   <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+   </head>
+   <style>
+    body {
+        margin-left: 200px;
+        margin-right: 200px;
+        color:black;
+        background-color:rgb(243, 238, 238);
+        font-family: "Times New Roman", Times, serif;
+      }
+      button{
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       border-radius: 25px; /* Kenar yuvarlaklığı */
+       box-shadow: 2px 2px 5px grey; /* Gri gölge */
+       font-size: 16px;
+       cursor: pointer;
+       background-color: rgb(183, 2, 2);
+      }
+      button:hover{
+        background-color: rgb(102, 2, 2);
+        font-size: 17px;
+      }
+      .kurs {
+            overflow: hidden; /* float kullanıldığında section'ın yüksekliğini içeren bir kutu oluşturur */
+        }
+
+        .kurs h2 {
+            margin-bottom: 10px;
+        }
+
+        .kurs p {
+            margin-bottom: 20px;
+            float: left;
+            max-width: 400px;
+        }
+
+        .kurs img {
+            float: right; /* Resmi sağa yasla */
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px grey; /* Gri gölge */
+            margin-bottom: 50px;
+        }
+    
+        ::marker{
+            color: rgb(183, 2, 2);
+        }
+        a:visited{
+            color:rgb(183, 2, 2)
+        }
+        a:hover{
+            font-size: 20px;
+            color:rgb(102, 2, 2);
+        }
+        
+   </style>
+
+   <body>
+   <title>Kaya Akademi</title>
+   <h1>Kaya Akademi</h1>
+   <hr>
+   <center>
+    <a href="index.html"><button type="button">Anasayfa</button></a>     
+    <a href="kurslar.html"><button type="button">Kurslar</button></a>          
+    <a href="kurumsal.html"><button type="button">Kurumsal</button></a>     
+    <a href="iletişim.html"><button type="button">Sık Sorulan Sorular</button></a>     
+    <a href="kayit.html"><button type="button">Kayıt Ol</button></a>
+   </center>
+   <header>
+    <h1 class="kurslar">Kurslar</h1>
+    <nav>
+        <ul>
+            <li><a href="gitarkurs.html">Gitar Kursu</a></li>
+            <li><a href="piyanokurs.html">Piyano Kursu</a></li>
+            <li><a href="kemankurs.html">Keman Kursu</a></li>
+            <li><a href="ukulelekurs.html">Ukulele Kursu</a></li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<section id="gitar-kursu" class="kurs">
+    <h2>Gitar Kursu</h2>
+    <p>Kaya Akademi'nin Gitar Kursu, müziğin büyülü dünyasına giriş yapmanın en heyecan verici yollarından biri olarak öne çıkıyor. 
+        Alanında uzmanlaşmış öğretmenler eşliğinde sunulan geniş kurs yelpazesi, başlangıç seviyesinden ileri düzeye kadar her öğrencinin ihtiyacına uygun programlarla dolu. 
+        Bireysel ilgi ve pratik odaklı eğitim anlayışıyla öne çıkan Kaya Akademi, öğrencilerin müzikal yeteneklerini geliştirmek ve sahne deneyimi kazanmalarını sağlamak için ideal bir ortam sunuyor.
+         Ayrıca, müzikal yaratıcılığı teşvik eden bir atmosfer ve modern eğitim teknolojileriyle desteklenen kurslar, 
+        öğrencilere müzikal potansiyellerini en üst düzeye çıkarma fırsatı veriyor.</p>
+    <img src="kurslarGitar.jpg" alt="kurslarGitar" width="450" height="300"> 
+    
+</section>
+<hr>
+
+<section id="piyano-kursu" class="kurs">
+    <h2>Piyano Kursu</h2>
+    <p>Kaya Akademi'nin Piyano Kursu, müzik tutkunlarını piyano çalmaya adım atmaya davet ediyor. Uzman öğretmenler eşliğinde sunulan dersler,
+         piyano çalmayı öğrenmek isteyen her seviyedeki öğrenciye hitap etmek üzere özel olarak tasarlanmıştır. 
+         Başlangıç seviyesinden ileri düzeye kadar geniş bir müfredat sunan Kaya Akademi, öğrencilerin müzikal yeteneklerini geliştirmeleri için gerekli olan bilgi ve becerileri sağlamakla kalmaz,
+          aynı zamanda kişisel ilgi ve özveriyle desteklenen bir öğrenme ortamı sunar. Piyano kursları, öğrencilere notaları okuma, doğru teknikleri öğrenme ve duygusal ifade yeteneklerini geliştirme fırsatı sunar. 
+        Müziğin büyüleyici dünyasına adım atmak isteyen herkes, Kaya Akademi'nin piyano kurslarıyla hayallerini gerçeğe dönüştürebilir.</p>
+    <img src="kurslarPiyano.jpg" alt="kurslarPiyano" width="450" height="300">
+</section>
+<hr>
+<section id="keman-kursu" class="kurs">
+    <h2>Keman Kursu</h2>
+    <p>Kaya Akademi'nin Keman Kursu, müziğin büyüsünü kemanın eşsiz tınılarıyla keşfetmek isteyen herkes için mükemmel bir fırsat sunuyor.
+         Uzman öğretmenler eşliğinde verilen dersler, başlangıç seviyesinden ileri düzeye kadar her öğrencinin ihtiyacını karşılamak üzere özel olarak tasarlanmıştır.
+          Bireysel ilgi ve kişiselleştirilmiş eğitim yaklaşımı sayesinde her öğrenci, keman çalmada kendine güvenle ilerleyebilir. 
+          Kaya Akademi'nin keman kursları, öğrencilere notaları okuma, teknik becerileri geliştirme ve sahne deneyimi kazanma fırsatı sunar.
+           Ayrıca, öğrencilerin müzikal yaratıcılıklarını teşvik etmek için etkileşimli ders materyalleri ve modern eğitim teknolojileriyle desteklenir. 
+           Müziğin büyüsüne kapılmak ve kemanla duygularını ifade etmek isteyen herkes, 
+        Kaya Akademi'nin keman kurslarıyla hayalini gerçeğe dönüştürebilir.</p>
+    <img src="kurslarKeman.jpg" alt="kurslarKeman" width="450" height="300">
+</section>
+<hr>
+<section id="ukulele-kursu" class="kurs">
+    <h2>Ukulele Kursu</h2>
+    <p>Kaya Akademi'nin Ukulele Kursu, müziğin eğlenceli dünyasına adım atmaya hazır olan herkesi karşılamak için özel olarak tasarlanmıştır. 
+        Uzman eğitmenler eşliğinde sunulan dersler, başlangıç seviyesinden ileri düzeye kadar her öğrencinin ihtiyacını karşılamak üzere kapsamlı bir müfredat sunar.
+         Küçük boyutu ve kolay öğrenilebilir yapısıyla ukulele, müzikal yolculuğa başlamak isteyenler için mükemmel bir seçenektir.
+          Kaya Akademi'nin ukulele kursları, öğrencilere enstrümanı doğru şekilde çalmayı öğrenme, akorları uygulama ve müzikal ifade yeteneklerini geliştirme fırsatı sunar.
+           Müziğin eşsiz tadını ukulele ile keşfetmek isteyen herkes,
+         Kaya Akademi'nin ukulele kurslarıyla adım atabilir ve kendini müziğin büyülü dünyasında bulabilir.</p>
+    <img src="kurslarUkulele.jpg" alt="kurslarUkulele" width="450" height="300">
+</section>
+<hr>

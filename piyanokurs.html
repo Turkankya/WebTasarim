@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Kaya Akademi</title>
+<style>
+   body {
+        margin-left: 200px;
+        margin-right: 200px;
+        color:black;
+        background-color:rgb(243, 238, 238);
+        font-family: "Times New Roman", Times, serif;
+      }
+      button{
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       border-radius: 25px; /* Kenar yuvarlaklığı */
+       box-shadow: 2px 2px 5px grey; /* Gri gölge */
+       font-size: 16px;
+       cursor: pointer;
+       background-color: rgb(183, 2, 2);
+      }
+      button:hover{
+        background-color: rgb(102, 2, 2);
+        font-size: 17px;
+      }
+   .container {
+     margin-top:50px;
+     display: flex;
+     align-items: flex-start; 
+     justify-content: space-between; 
+     flex-wrap: wrap; 
+   }
+   .text {
+     max-width: 500px; 
+     margin-bottom: 50px;
+   }
+   img {
+     max-width: 500px; 
+     height: auto; 
+     margin-top: 50px; 
+     margin-bottom: 20px; 
+     border-radius: 25px;
+       box-shadow: 2px 2px 5px grey;
+   }
+   .quote {
+        border: 3px solid #890d0d; /* Kutucuk çerçevesi */
+        padding: 20px; /* Kutucuk iç boşluğu */
+        margin-bottom: 50px;
+        width: 50%; /* Kutucuğun genişliği */
+        box-sizing: border-box; /* Kutucuk iç boşluğunu genişliğe dahil eder */
+        border-radius: 25px;
+        background-color: rgb(183, 2, 2);
+        color:white;
+      }
+ </style>
+</head>
+
+<body>
+ <h1>Kaya Akademi</h1>
+ <hr>
+ <h2>Piyano Kursu</h2>
+ <center>
+  <a href="index.html"><button type="button">Anasayfa</button></a>     
+  <a href="kurslar.html"><button type="button">Kurslar</button></a>                 
+  <a href="kurumsal.html"><button type="button">Kurumsal</button></a>     
+  <a href="iletişim.html"><button type="button">Sık Sorulan Sorular</button></a>      
+  <a href="kayit.html"><button type="button">Kayıt Ol</button></a>
+ </center>
+ 
+ <div class="container">
+   <div>
+     <h2>Müzikle Farklı Dünyalara Açılın...</h2>
+     <h3>Kaya Akademi Piyano Kursu</h3>
+     <p class="text">
+      Piyano, müziğin büyüleyici dünyasına giriş yapmanın en zarif yollarından biridir. Melodilerin sihirli dokunuşunu hissedin, notalar arasında yolculuk yapın ve hayal gücünüzü sınırlarınızın ötesine taşıyın. Kaya Akademi Piyano Kursu, sizlere bu eşsiz deneyimi sunmak için burada!
+      <br><br>
+      Piyano çalmanın inceliklerini öğrenmek ve müzikal yeteneklerinizi geliştirmek için doğru adrestesiniz. Türkiye'nin en önde gelen müzik okullarından biri olan Kaya Akademi, uzman eğitmen kadrosuyla size müzikal yolculuğunuzda rehberlik etmeye hazır.
+     </p>
+   </div>
+   <div>
+     <img src="kursPiyano.jpg" alt="Piyano" height="600">
+     <p>Sıfırdan piyano dersleri için <a href="https://www.youtube.com/playlist?list=PLLojZQ-d8C1XzRzybjoiYP9sLcATswcwn">YouTube</a> sayfamızı inceleyebilirsiniz.</p>
+   </div>
+   <div class="quote">
+      <p>Her yıl piyano kursuna başlayan öğrenciler, müzikle doğrudan temas etmenin keyfini yaşayarak hayatlarında unutulmaz anlar biriktirirler.</p>
+    </div>
+ </div>
+
+ <h2>Piyano Hakkında Bilgi</h2>
+   <p>Piyano, müziğin klasikleşmiş enstrümanlarından biridir. 18. yüzyılda icat edilen piyano, o zamandan beri sanat müziğinde ve popüler müzikte geniş bir kullanım alanına sahiptir.</p>
+   <h2>Piyano Çeşitleri</h2>
+   <ul>
+     <li><b>Dikey Piyano:</b> Dikey piyanolar, evlerde ve stüdyolarda sıklıkla kullanılan, dikey olarak yerleştirilen piyano türüdür. Genellikle daha kompakt ve ekonomiktir.</li>
+     <li><b>Grande Piyano:</b> Grande piyanolar, konser salonlarında, tiyatro sahnelerinde ve müzik okullarında kullanılan büyük boyutlu piyano türüdür. Güçlü ve zengin bir sese sahiptir.</li>
+     <li><b>Dijital Piyano:</b> Dijital piyanolar, dijital teknoloji kullanılarak tasarlanmış ve elektronik olarak çalışan piyano türüdür. Taşınabilirlik ve çeşitli ses efektleri gibi avantajları vardır.</li>
+   </ul>
+   <h2>Piyano Akortları</h2>
+   <p>Piyano, doğru akort edildiğinde en güzel seslerini çıkarır. En yaygın kullanılan piyano akortu A4 (440 Hz) frekansındadır.</p>
+   <b>Piyano Akort Tablosu</b>
+   <table border="3">
+   <tbody><tr>
+      <td><b>Akort Türü</b></td>
+      <td><b>Akort Frekansı</b></td>
+   </tr>
+   <tr>
+     <td>Standart Akort</td>
+     <td>440 Hz</td>
+   </tr>
+   <tr>
+      <td>Bir Ton Aşağı Akort</td>
+      <td>415.30 Hz</td>
+   </tr>
+   <tr>
+      <td>Bir Ton Yukarı Akort</td>
+      <td>466.16 Hz</td>
+   </tr>
+ </tbody></table>
+ <hr>
+</body>
+</html>
